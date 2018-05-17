@@ -8,6 +8,14 @@ matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
+# Import data
+dataIn = np.genfromtxt('dataRegression_train.csv',delimiter=',')
+x_train = dataIn[:,0:2]
+y_train = dataIn[:,2]
+dataIn = np.genfromtxt('dataRegression_test.csv',delimiter=',')
+x_test = dataIn[:,0:2]
+y_test = dataIn[:,2]
+
 # Create model
 model = Sequential()
 model.add(Dense(units=50, activation='relu', input_dim=2))
@@ -17,20 +25,8 @@ model.add(Dense(units=1))
 
 model.compile(loss='mse',optimizer=keras.optimizers.Adagrad(lr=0.1))
 
-# Import data
-dataIn = np.genfromtxt('dataRegression_train.csv',delimiter=',')
-x_train = dataIn[:,0:2]
-y_train = dataIn[:,2]
-dataIn = np.genfromtxt('dataRegression_test.csv',delimiter=',')
-x_test = dataIn[:,0:2]
-y_test = dataIn[:,2]
-
 # Train
 model.fit(x_train, y_train, validation_data=(x_test,y_test), epochs=1000, batch_size=10)
-
-# Validate
-loss = model.evaluate(x_train, y_train, batch_size=10)
-print(loss)
 
 # Create a prediction set
 x_pred = np.mgrid[0:1:25j, 0:1:25j].reshape(2,-1).T
