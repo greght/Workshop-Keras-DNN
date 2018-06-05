@@ -4,7 +4,6 @@ import keras
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, Dropout, Flatten, BatchNormalization
-import numpy as np
 
 # Load data
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
@@ -31,4 +30,6 @@ model.compile(loss='categorical_crossentropy',
               metrics=['accuracy'])
           
 # Train
-model.fit(x_train, y_train, validation_data=(x_test,y_test), epochs=15, batch_size=100, shuffle=True)
+model.fit(x_train, y_train,
+          validation_data=(x_test,y_test),
+          epochs=5, batch_size=100, shuffle=True)

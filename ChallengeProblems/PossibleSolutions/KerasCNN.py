@@ -4,7 +4,6 @@ import keras
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, Dropout, Flatten, BatchNormalization
-import numpy as np
 
 # Load data
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
