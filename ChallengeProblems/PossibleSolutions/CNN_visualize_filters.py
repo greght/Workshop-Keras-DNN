@@ -5,6 +5,8 @@ from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, Dropout, Flatten, BatchNormalization
 
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.cm as cm
 import matplotlib.pyplot as plt
 

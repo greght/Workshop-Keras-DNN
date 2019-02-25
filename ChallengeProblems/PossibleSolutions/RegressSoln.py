@@ -19,8 +19,8 @@ y_test = dataIn[:,2]
 # Create model
 model = Sequential()
 model.add(Dense(units=50, activation='relu', input_dim=2))
-model.add(Dense(units=130, activation='relu'))
-model.add(Dense(units=25, activation='relu'))
+model.add(Dense(units=50, activation='relu'))
+model.add(Dense(units=50, activation='relu'))
 model.add(Dense(units=1))
 
 model.compile(loss='mse',optimizer=keras.optimizers.Adagrad(lr=0.1))
