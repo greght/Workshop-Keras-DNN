@@ -12,10 +12,10 @@ The python code is organized into Jupyter notebooks using Google Colaboratory. E
 [CNN for image classification](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/CNNProb.ipynb)
 
 ## "Possible solutions"
-[DNN for regression](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/RegressProb.ipynb)
+[DNN for regression](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/RegressSoln.ipynb)
 
-[DNN for classification](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/ClassifyProb.ipynb)
+[DNN for classification](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/ClassifySoln.ipynb)
 
-[CNN for image classification](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/CNNProb.ipynb)
+[CNN for image classification](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/CNNSoln.ipynb)
 
 [CNN with basic filter visualization](https://colab.research.google.com/github/greght/Workshop-Keras-DNN/blob/master/ChallengeProblems/PossibleSolutions/CNN_visualize_filters.ipynb)
